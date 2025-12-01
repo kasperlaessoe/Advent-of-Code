@@ -1,0 +1,21 @@
+stages:
+- build
+- test
+
+build:
+  stage: build
+  image: rust:latest
+  script:
+  - cargo build --release
+  artifacts:
+    paths:
+    - target/release/aoc25
+    expire_in: 1 hour
+
+test:
+  stage: test
+  image: rust:latest
+  script:
+  - cargo test --release
+  - cargo clippy -- -D warnings
+  - cargo fmt --check
