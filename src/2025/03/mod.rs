@@ -68,11 +68,6 @@ fn find_max_k_digits(digits: &[u32], k: usize) -> u64 {
         let mut max_pos = start;
 
         for i in start..=end {
-            if digits[i] == 9 {
-                max_digit = 9;
-                max_pos = i;
-                break;
-            }
             if digits[i] > max_digit {
                 max_digit = digits[i];
                 max_pos = i;

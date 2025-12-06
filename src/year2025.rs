@@ -9,3 +9,9 @@ pub mod day02;
 
 #[path = "2025/04/mod.rs"]
 pub mod day04;
+
+#[path = "2025/05/mod.rs"]
+pub mod day05;
+
+#[path = "2025/06/mod.rs"]
+pub mod day06;

@@ -39,6 +39,7 @@ pub mod year2015;
 
 #[path = "year2025.rs"]
 pub mod year2025;
+pub mod year2020;
 
 pub mod discovery;
 pub mod tui;

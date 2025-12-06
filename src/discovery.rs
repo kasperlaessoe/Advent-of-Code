@@ -63,6 +63,9 @@ pub fn build_registry() -> SolutionRegistry {
     let mut registry = SolutionRegistry::new();
 
     // Register all solutions
+        registry.register(2020, 1, crate::year2020::day01::Day01);
+        registry.register(2025, 6, crate::year2025::day06::Day06);
+        registry.register(2025, 5, crate::year2025::day05::Day05);
         registry.register(2015, 24, crate::year2015::day24::Day24);
         registry.register(2015, 3, crate::year2015::day03::Day03);
         registry.register(2025, 4, crate::year2025::day04::Day04);
